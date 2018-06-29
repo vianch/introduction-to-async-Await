@@ -2,9 +2,6 @@
 
 - [Asyncronous functions](#async)
 - [await operator](#await)
-- [Combining async and await](#combining)
-- [Parallel execution without await](#parallel)
-- [Position of the async keyword](#position)
 
 ## Async
 
@@ -27,40 +24,25 @@ loadData( 0 ).catch( error => console.log( error ) );
 ```
 
 ## Await
+Await is a prefix operator standing in front of a promise.
+
+As long as the promise behind the await operator is in a pending state, await blocks execution.
+
+As soon as the promise is resolved, await returns the fulfillment value of the promise.
+
+As soon as the promise is rejected, await throws the value of rejection.
+
+The await operator can only be used in asynchronous functions. If the async keyword is removed from the previous example, an error is thrown:
+Uncaught SyntaxError: Unexpected identifier
 
 **await operator:**
 ```js
-function codes() {
-  // paste real code
-}
-```
+const delayedPromise = async () => {
+  let promise = new Promise( (resolve, reject) => {
+    setTimeout(() => resolve("Promise completed..."), 3000);
+  });
 
-## Combining
-
-Combining async and await
-
-```js
-function codes() {
-  // paste real code
-}
-```
-
-## Parallel
-
-Parallel execution without await
-
-```js
-function codes() {
-  // paste real code
-}
-```
-
-## Position
-
-Position of the async keyword
-
-```js
-function codes() {
-  // paste real code
-}
+  const promiseValue = await promise
+  console.log(`Promise value: ${promiseValue}`);
+};
 ```
