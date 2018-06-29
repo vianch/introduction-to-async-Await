@@ -1,0 +1,9 @@
+{
+  "name": "introduction-to-async-await",
+  "version": "1.0.0",
+  "description": "Introduction to async await E2017",
+  "main": "index.js",
+  "repository": "https://github.com/vianch/introduction-to-async-Await.git",
+  "author": "Victor Chavarro <victor.chavarro@zagalabs.com>",
+  "license": "none"
+}
