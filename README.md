@@ -2,6 +2,7 @@
 
 - [Asyncronous functions](#async)
 - [await operator](#await)
+- [Run commands](#run)
 
 ## Async
 
@@ -45,4 +46,10 @@ const delayedPromise = async () => {
   const promiseValue = await promise
   console.log(`Promise value: ${promiseValue}`);
 };
+```
+
+## Run
+
+```
+node src/main.js
 ```
