@@ -16,7 +16,7 @@ function codes() {
 }
 ```
 
-##Await
+## Await
 
 await operator
 
