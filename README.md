@@ -8,7 +8,7 @@
 
 ## Async
 
-**Asyncronous functions**
+**Asyncronous functions:**
 Asynchronous functions are functions that return a promise. We denote them by using the async keyword.
 
 ```javascript
