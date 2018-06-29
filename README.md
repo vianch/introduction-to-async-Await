@@ -8,17 +8,7 @@
 
 ## Async
 
-Asyncronous functions
-
-```js
-function codes() {
-  // paste real code
-}
-```
-
-## Await
-
-**await operator:**
+**Asyncronous functions**
 Asynchronous functions are functions that return a promise. We denote them by using the async keyword.
 
 ```javascript
@@ -34,6 +24,15 @@ const loadData = async function( value ) {
 loadData( 1 ).then( response => console.log( response ) );
  
 loadData( 0 ).catch( error => console.log( error ) );
+```
+
+## Await
+
+**await operator:**
+```js
+function codes() {
+  // paste real code
+}
 ```
 
 ## Combining
