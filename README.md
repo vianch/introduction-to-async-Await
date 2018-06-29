@@ -18,12 +18,22 @@ function codes() {
 
 ## Await
 
-await operator
+**await operator:**
+Asynchronous functions are functions that return a promise. We denote them by using the async keyword.
 
-```js
-function codes() {
-  // paste real code
+```javascript
+
+const loadData = async function( value ) {
+    if ( value > 0 ) {
+        return { data: value };
+    } else {
+        throw new Error( 'Value must be greater than 0' );
+    }
 }
+ 
+loadData( 1 ).then( response => console.log( response ) );
+ 
+loadData( 0 ).catch( error => console.log( error ) );
 ```
 
 ## Combining
