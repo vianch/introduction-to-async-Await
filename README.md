@@ -52,4 +52,8 @@ const delayedPromise = async () => {
 
 ```
 node src/main.js
+or
+yarn start
+or
+npm start
 ```

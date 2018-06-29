@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/vianch/introduction-to-async-Await.git",
   "author": "Victor Chavarro <victor.chavarro@zagalabs.com>",
-  "license": "none"
+  "license": "none",
+  "scripts": {
+    "start": "node src/main"
+  }
 }
